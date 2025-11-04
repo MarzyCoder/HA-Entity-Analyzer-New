@@ -35,10 +35,11 @@ jobs:
     - name: Upload binaries to release
       uses: softprops/action-gh-release@v2
       with:
-        files: /linux/dist/*
+        files: dist/*
       env:
 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
 
 
